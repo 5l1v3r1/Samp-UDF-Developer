@@ -1,3 +1,8 @@
+Доработка Samp-UDF
+Тема разработки - http://cheat-master.ru/forum/149-619860-2
+
+Функционал
+
  SAMPFunktionen:                                                                                                            
       IsSAMPAvailable()                         PrГѓВјft, ob man in den Chat schreiben kann & ob GTA geladen ist            
       isInChat()                                PrГѓВјft, ob der Spieler gerade chattet oder in einem Dialog ist            
