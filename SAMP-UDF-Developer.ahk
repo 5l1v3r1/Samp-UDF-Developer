@@ -10,16 +10,16 @@
 ; Modified by: Agrippa1994
 ; https://github.com/agrippa1994
 ; Modified by: RawDev and ELon
-; Модифицировал: [CM}MurKotik
+; ГЊГ®Г¤ГЁГґГЁГ¶ГЁГ°Г®ГўГ Г«: [CM}MurKotik
 ; https://github.com/MurKotik
 ; VK: http://vk.com/id350689538
-; Дорабатывал: Godarck
-; Дорабатывал: Unknown
-; Дорабатывал: McFree
-; Обновление от 04.08.2016
-; Тема: http://cheat-master.ru/forum/150-619860-1
+; Г„Г®Г°Г ГЎГ ГІГ»ГўГ Г«: Godarck
+; Г„Г®Г°Г ГЎГ ГІГ»ГўГ Г«: Unknown
+; Г„Г®Г°Г ГЎГ ГІГ»ГўГ Г«: McFree
+; ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ Г®ГІ 04.08.2016
+; Г’ГҐГ¬Г : http://cheat-master.ru/forum/150-619860-1
 ; Do not remove these lines.
-; Не удаляйте пожалуйста авторов
+; ГЌГҐ ГіГ¤Г Г«ГїГ©ГІГҐ ГЇГ®Г¦Г Г«ГіГ©Г±ГІГ  Г ГўГІГ®Г°Г®Гў
 ; ####################
 
 ; Samp-udf-addon
@@ -164,12 +164,12 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; ###############################################################################################################################
 ; # 														                                                                    #
 ; # SAMP-Funktionen:                                                                                                            #
-; #     - IsSAMPAvailable()                         PrГѓВјft, ob man in den Chat schreiben kann & ob GTA geladen ist            #
-; #     - isInChat()                                PrГѓВјft, ob der Spieler gerade chattet oder in einem Dialog ist            #
+; #     - IsSAMPAvailable()                         PrГѓВѓГ‚Вјft, ob man in den Chat schreiben kann & ob GTA geladen ist            #
+; #     - isInChat()                                PrГѓВѓГ‚Вјft, ob der Spieler gerade chattet oder in einem Dialog ist            #
 ; #     - getUsername()                             Liest den Namen des Spielers aus                                            #
 ; #     - getId()                                   Liest die Id des Spielers aus                                               #
 ; #     - SendChat(wText)                           Sendet eine Nachricht od. einen Befehl direkt an den Server                 #
-; #     - addChatMessage(wText)                     FГѓВјgt eine Zeile in den Chat ein (nur fГѓВјr den Spieler sichtbar)        #
+; #     - addChatMessage(wText)                     FГѓВѓГ‚Вјgt eine Zeile in den Chat ein (nur fГѓВѓГ‚Вјr den Spieler sichtbar)        #
 ; #     - showGameText(wText, dwTime, dwTextsize)   Zeigt einen Text inmitten des Bildschirmes an  					            #
 ; #     - playAudioStream(wUrl)                     Spielt einen "Audio Stream" ab                                              #
 ; #     - stopAudioStream()                         Stoppt den aktuellen Audio Stream                                           #
@@ -197,17 +197,17 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; ###############################################################################################################################
 ; # SAMP Dialog Funktionen (v0.3.7):																	                        #
 ; # --------------------------------------------------------------------------------------------------------------------------- #
-; #	- isDialogOpen() - PrГјft, ob gerade ein Dialog angezeigt wird (gibt true oder false zurГјck)	                       		#
+; #	- isDialogOpen() - PrГѓВјft, ob gerade ein Dialog angezeigt wird (gibt true oder false zurГѓВјck)	                       		#
 ; #	- getDialogStyle() - Liest den Typ des (zuletzt) angezeigten Dialogs aus (0-5)                      						#
 ; #	- getDialogID() - Liest die ID des (zuletzt) angezeigten Dialogs aus (auch vom Server)	                        			#
 ; #	- setDialogID(id) - Setzt die ID des (zuletzt) angezeigten Dialogs auf [id]				                        			#
-; #	- getDialogIndex() - Liest die (zuletzt) ausgewГ¤hlte Zeile des Dialogs aus 				                        		#
-; #	- getDialogCaption() - Liest die Гњberschrift des (zuletzt) angezeigten Dialogs aus 			                       		#
+; #	- getDialogIndex() - Liest die (zuletzt) ausgewГѓВ¤hlte Zeile des Dialogs aus 				                        		#
+; #	- getDialogCaption() - Liest die ГѓВњberschrift des (zuletzt) angezeigten Dialogs aus 			                       		#
 ; #	- getDialogText() - Liest den Text des (zuletzt) angezeigten Dialogs aus (auch bei Listen)                              	#
 ; #	- getDialogLineCount() - Liest die Anzahl der Zeilen/Items des (zuletzt) angezeigten Dialogs aus                        	#
 ; #	- getDialogLine(index) - Liest die Zeile an der Stelle [index] mittels getDialogText aus 		                        	#
-; #	- getDialogLines() - Liest die Zeilen mittels getDialogText aus (gibt ein Array zurГјck)			                      	#
-; #	- isDialogButton1Selected() - PrГјft, ob Button1 des Dialogs ausgewГ¤hlt ist 						                       	#
+; #	- getDialogLines() - Liest die Zeilen mittels getDialogText aus (gibt ein Array zurГѓВјck)			                      	#
+; #	- isDialogButton1Selected() - PrГѓВјft, ob Button1 des Dialogs ausgewГѓВ¤hlt ist 						                       	#
 ; # - getDialogStructPtr() - Liest den Base Pointer zur Dialogstruktur aus (intern genutzt)			                        	#
 ; #																									                        	#
 ; #	- showDialog(style, caption, text, button1, button2, id) - Zeigt einen Dialog an (nur lokal)	                        	#
@@ -218,8 +218,8 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; #	    - getTargetPed(dwPED)   			        Zeigt die PED-ID, des Spielers, auf den man zielt.                          #
 ; #     - getPedById(dwId)                          Zeigt die PED-Id zu der Id.                                                 #
 ; #     - getIdByPed(dwId)                          Zeigt die Id der PED-Id.                                                    #
-; #     - getStreamedInPlayersInfo()                Zeigt Informationen ГѓВјber die gestreamten Spieler.                        #
-; #     - callFuncForAllStreamedInPlayers()         FГѓВјhrt bestimmte Funktionen, fГѓВјr die gestreamten Spieler aus.          #
+; #     - getStreamedInPlayersInfo()                Zeigt Informationen ГѓВѓГ‚Вјber die gestreamten Spieler.                        #
+; #     - callFuncForAllStreamedInPlayers()         FГѓВѓГ‚Вјhrt bestimmte Funktionen, fГѓВѓГ‚Вјr die gestreamten Spieler aus.          #
 ; #	    - getDist(pos1,pos2)   			            Rechnet den Abstand zwischen zwei Positionen aus.                           #
 ; #     - getClosestPlayerPed()                     Zeigt die PED-ID, des Spielers, der am nahesten zu einem steht.             #
 ; #     - getClosestPlayerId()                      Zeigt die Id, des Spielers, der am nahesten zu einem steht.                 #
@@ -270,14 +270,14 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; # 														                                                                    #
 ; # Spielerfunktionen:                                                                                                          #
 ; #     - getPlayerHealth()                         Ermittelt die HP des Spielers                                               #
-; #     - getPlayerArmour()                         Ermittelt den RГѓВјstungswert des Spielers                                  #
+; #     - getPlayerArmour()                         Ermittelt den RГѓВѓГ‚Вјstungswert des Spielers                                  #
 ; # 	- getPlayerInteriorId()			            Ermittelt die Interior ID wo der Spieler ist 		                        #
 ; # 	- getPlayerSkinId()			                Ermittelt die Skin ID des Spielers           		                        #
 ; # 	- getPlayerMoney() 			                Ermittelt den Kontostand des Spielers (nur GTA Intern)                      #
 ; #	    - getPlayerWanteds()			            Ermittelt die Wantedanzahl des Spielers (nur bis 6 Wanteds)                 #
 ; #	    - getPlayerWeaponId()			            Ermittelt die Waffen ID des Spielers                                        #
 ; #	    - getPlayerWeaponName()			            Ermittelt den Namen, der Waffe des Spielers                                 #
-; #	    - getPlayerState()			                Ermittelt den "Status" des Spielers (Zu FuГѓЕё, Fahrer, Tot)                #
+; #	    - getPlayerState()			                Ermittelt den "Status" des Spielers (Zu FuГѓВѓГ…Вё, Fahrer, Tot)                #
 ; #	    - getPlayerMapPosX()			            Ermittelt die X-Position auf der Map im Menu                                #
 ; #	    - getPlayerMapPosY()			            Ermittelt die Y-Position auf der Map im Menu                                #
 ; #	    - getPlayerMapZoom()			            Ermittelt den Zoom auf der Map im Menu                                      #
@@ -305,26 +305,26 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; # 														                                                                    #
 ; # Standpunktbestimmung:                                                                                                       #
 ; #     - getCoordinates()                          Ermittelt die aktuelle Position (Koordinaten)                               #
-; #	    - getPlayerPos(X,Y,Z) 			            siehe oben drГѓВјber 						                                #
+; #	    - getPlayerPos(X,Y,Z) 			            siehe oben drГѓВѓГ‚Вјber 						                                #
 ; # 														                                                                    #
 ; # --------------------------------------------------------------------------------------------------------------------------- #
 ; # 														                                                                    #
 ; #     - initZonesAndCities()                      Initialisiert eine Liste aller Standartgebiete                              #
-; #                                                 (Voraussetzung fГѓВјr die folgenden Funktionen dieser Kategorie)            #
+; #                                                 (Voraussetzung fГѓВѓГ‚Вјr die folgenden Funktionen dieser Kategorie)            #
 ; #     - calculateZone(X, Y, Z)                    Bestimmt die Zone (= Stadtteil) aus den geg. Koordinaten                    #
 ; #     - calculateCity(X, Y, Z)                    Bestimmt die Stadt aus den geg. Koordinaten                                 #
 ; #     - getCurrentZonecode()                      Ermittelt die aktulle Zone in Kurzform                                      #
-; #     - AddZone(Name, X1, Y1, Z1, X2, Y2, Z2)     FГѓВјgt eine Zone zum Index hinzu                                           #
-; #     - AddCity(Name, X1, Y1, Z1, X2, Y2, Z2)     FГѓВјgt eine Stadt zum Index hinzu                                          #
-; #	    - IsPlayerInRangeOfPoint(X, Y, Z, Radius)   Bestimmt ob der Spieler in der NГѓВ¤he der Koordinaten ist                  #
-; #	    - IsIsPlayerInRangeOfPoint2D(X, Y, Radius)  Bestimmt ob der Spieler in der NГѓВ¤he der Koordinaten ist                  #
+; #     - AddZone(Name, X1, Y1, Z1, X2, Y2, Z2)     FГѓВѓГ‚Вјgt eine Zone zum Index hinzu                                           #
+; #     - AddCity(Name, X1, Y1, Z1, X2, Y2, Z2)     FГѓВѓГ‚Вјgt eine Stadt zum Index hinzu                                          #
+; #	    - IsPlayerInRangeOfPoint(X, Y, Z, Radius)   Bestimmt ob der Spieler in der NГѓВѓГ‚В¤he der Koordinaten ist                  #
+; #	    - IsIsPlayerInRangeOfPoint2D(X, Y, Radius)  Bestimmt ob der Spieler in der NГѓВѓГ‚В¤he der Koordinaten ist                  #
 ; #	    - getPlayerZone()                   				                                                                    #
 ; #	    - getPlayerCity()                   					                                                                #
 ; # 														                                                                    #
 ; ###############################################################################################################################
 ; # Sonstiges:                                                                                                                  #
 ; #     - checkHandles()                                                                                                        #
-; #     - AntiCrash()								Hilft gegen das abstГѓВјrzen bei Warningscodes                              #
+; #     - AntiCrash()								Hilft gegen das abstГѓВѓГ‚Вјrzen bei Warningscodes                              #
 ; ###############################################################################################################################
 ; # Speicherfunktionen (intern genutzt):                                                                                        #
 ; # Memory Functions:                                                                                                           #
@@ -354,49 +354,50 @@ global iUpdateTick := 2500 ;time in ms, used for getPlayerNameById etc. to refre
 ; ###############################################################################################################################
 ; # by {CM}MurKotik                                                                                                             #
 ; # Samp-UDF-Addon function                                                                                                     #
-; #     - setCoordinates(x, y, z, Interior)         - Телепорт персонажа                                                        #
-; #     - getIP()                                   - Выдаёт IP Адрес сервера                                                   #
-; #     - setIP(IP)                                 - Меняет IP Адрес Сервера       (Не доработан)                              #
-; #     - getHostname()                             - Выдаёт Имя сервера                                                        #
-; #     - setUsername(Username)                     - Установить новый Ник          (Не доработан)                              #
-; #     - colorhud(Цвет)                            - Менякет зелёный цвет в игре на указаный                                   #
-; #	    - setTime(hour)	                            - Устанавливает время на сервере                                            #
-; #	    - getSkinID()   	                        - Выдаёт ID Скина вашего персоажа                                           #
-; #	    - getDialogTitle() 	                        - Выдаёт Заголовок последнего диалога                                       #
-; #	    - getPlayerColor(id)                        - Выдаёт ID Цвета ника игрока по ID                                         #
-; #	    - setPlayerColor(id,color)                  - Устанавливает цвет ника игроку по его ID                                  #
-; #	    - colorToStr(color)	                        - Конвертация цвета из десятичной в шестнадцатиричную                       #
-; #	    - getWeaponId() 	                        - Выдаёт ID оружия вашего персонаха                                         #
-; #     - restartGameEx()                           - Рестарт игры (Не отключает от сервера)                                    #
-; #     - setrestart()                              - Установить рестартинг (применить)                                         #
-; #     - disconnectEx()                            - Отключение от сервера                                                     #
-; #     - WriteProcessMemory(title,addresse,wert,size) - Работас пресетам                                                       #
-; #     - setCoordinates(x, y, z, Interior)         - Телепортирует на указаные кординаты                                       #
-; #     - writeFloat(hProcess, dwAddress, wFloat)   - Работа с памятью процесса                                                 #
-; #     - writeByte(hProcess, dwAddress, wInt)      - Работа с памятью процесса                                                 #
-; #     - FloatToHex(value)                         - Перевот из Float в Hex                                                    #
-; #     - IntToHex(int)                             - Выдаёт интерьер персонажа                                                 #
-; #     - addChatMessageEx(Color, wText)            - Фэйк сообщение с покраской timstamp                                       #
-; #     - newchat()                                 - Обновление чата (пока что отправлением пустых строк)                      #
-; #     - connect(IP)                               - Подключение к серверу по его IP (Пока что без смены Порта)                #
-; #     - HexToDec(str)                             - Перевод из Hex в Dec (Строковых значений)                                 #
-; #     - getVehicleLockStaterus()                  - Перевод из логического значения в "Отткрыто / Закрыто"                    #
-; #     - getVehicleEngineStaterus()                - Перевод из логического значения в "Заведён / Выключен"                    #
-; #     - getVehicleLightStaterus()                 - Перевод из логического значения в "Выключен / Включён"                    #
-; #     - getVehicleHealthrus()                     - Корекция логического вырожения (Заменяем -1 на пустую переменную)         #
+; #     - setCoordinates(x, y, z, Interior)         - Г’ГҐГ«ГҐГЇГ®Г°ГІ ГЇГҐГ°Г±Г®Г­Г Г¦Г                                                         #
+; #     - getIP()                                   - Г‚Г»Г¤Г ВёГІ IP ГЂГ¤Г°ГҐГ± Г±ГҐГ°ГўГҐГ°Г                                                    #
+; #     - setIP(IP)                                 - ГЊГҐГ­ГїГҐГІ IP ГЂГ¤Г°ГҐГ± Г‘ГҐГ°ГўГҐГ°Г        (ГЌГҐ Г¤Г®Г°Г ГЎГ®ГІГ Г­)                              #
+; #     - getHostname()                             - Г‚Г»Г¤Г ВёГІ Г€Г¬Гї Г±ГҐГ°ГўГҐГ°Г                                                         #
+; #     - setUsername(Username)                     - Г“Г±ГІГ Г­Г®ГўГЁГІГј Г­Г®ГўГ»Г© ГЌГЁГЄ          (ГЌГҐ Г¤Г®Г°Г ГЎГ®ГІГ Г­)                              #
+; #     - colorhud(Г–ГўГҐГІ)                            - ГЊГҐГ­ГїГЄГҐГІ Г§ГҐГ«ВёГ­Г»Г© Г¶ГўГҐГІ Гў ГЁГЈГ°ГҐ Г­Г  ГіГЄГ Г§Г Г­Г»Г©                                   #
+; #	    - setTime(hour)	                            - Г“Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ ГўГ°ГҐГ¬Гї Г­Г  Г±ГҐГ°ГўГҐГ°ГҐ                                            #
+; #	    - getSkinID()   	                        - Г‚Г»Г¤Г ВёГІ ID Г‘ГЄГЁГ­Г  ГўГ ГёГҐГЈГ® ГЇГҐГ°Г±Г®Г Г¦Г                                            #
+; #	    - getDialogTitle() 	                        - Г‚Г»Г¤Г ВёГІ Г‡Г ГЈГ®Г«Г®ГўГ®ГЄ ГЇГ®Г±Г«ГҐГ¤Г­ГҐГЈГ® Г¤ГЁГ Г«Г®ГЈГ                                        #
+; #	    - getPlayerColor(id)                        - Г‚Г»Г¤Г ВёГІ ID Г–ГўГҐГІГ  Г­ГЁГЄГ  ГЁГЈГ°Г®ГЄГ  ГЇГ® ID                                         #
+; #	    - setPlayerColor(id,color)                  - Г“Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ Г¶ГўГҐГІ Г­ГЁГЄГ  ГЁГЈГ°Г®ГЄГі ГЇГ® ГҐГЈГ® ID                                  #
+; #	    - colorToStr(color)	                        - ГЉГ®Г­ГўГҐГ°ГІГ Г¶ГЁГї Г¶ГўГҐГІГ  ГЁГ§ Г¤ГҐГ±ГїГІГЁГ·Г­Г®Г© Гў ГёГҐГ±ГІГ­Г Г¤Г¶Г ГІГЁГ°ГЁГ·Г­ГіГѕ                       #
+; #	    - getWeaponId() 	                        - Г‚Г»Г¤Г ВёГІ ID Г®Г°ГіГ¦ГЁГї ГўГ ГёГҐГЈГ® ГЇГҐГ°Г±Г®Г­Г ГµГ                                          #
+; #     - restartGameEx()                           - ГђГҐГ±ГІГ Г°ГІ ГЁГЈГ°Г» (ГЌГҐ Г®ГІГЄГ«ГѕГ·Г ГҐГІ Г®ГІ Г±ГҐГ°ГўГҐГ°Г )                                    #
+; #     - setrestart()                              - Г“Г±ГІГ Г­Г®ГўГЁГІГј Г°ГҐГ±ГІГ Г°ГІГЁГ­ГЈ (ГЇГ°ГЁГ¬ГҐГ­ГЁГІГј)                                         #
+; #     - disconnectEx()                            - ГЋГІГЄГ«ГѕГ·ГҐГ­ГЁГҐ Г®ГІ Г±ГҐГ°ГўГҐГ°Г                                                      #
+; #     - WriteProcessMemory(title,addresse,wert,size) - ГђГ ГЎГ®ГІГ Г± ГЇГ°ГҐГ±ГҐГІГ Г¬                                                       #
+; #     - setCoordinates(x, y, z, Interior)         - Г’ГҐГ«ГҐГЇГ®Г°ГІГЁГ°ГіГҐГІ Г­Г  ГіГЄГ Г§Г Г­Г»ГҐ ГЄГ®Г°Г¤ГЁГ­Г ГІГ»                                       #
+; #     - writeFloat(hProcess, dwAddress, wFloat)   - ГђГ ГЎГ®ГІГ  Г± ГЇГ Г¬ГїГІГјГѕ ГЇГ°Г®Г¶ГҐГ±Г±Г                                                  #
+; #     - writeByte(hProcess, dwAddress, wInt)      - ГђГ ГЎГ®ГІГ  Г± ГЇГ Г¬ГїГІГјГѕ ГЇГ°Г®Г¶ГҐГ±Г±Г                                                  #
+; #     - FloatToHex(value)                         - ГЏГҐГ°ГҐГўГ®ГІ ГЁГ§ Float Гў Hex                                                    #
+; #     - IntToHex(int)                             - Г‚Г»Г¤Г ВёГІ ГЁГ­ГІГҐГ°ГјГҐГ° ГЇГҐГ°Г±Г®Г­Г Г¦Г                                                  #
+; #     - addChatMessageEx(Color, wText)            - Г”ГЅГ©ГЄ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ Г± ГЇГ®ГЄГ°Г Г±ГЄГ®Г© timstamp                                       #
+; #     - newchat()                                 - ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ Г·Г ГІГ  (ГЇГ®ГЄГ  Г·ГІГ® Г®ГІГЇГ°Г ГўГ«ГҐГ­ГЁГҐГ¬ ГЇГіГ±ГІГ»Гµ Г±ГІГ°Г®ГЄ)                      #
+; #     - connect(IP)                               - ГЏГ®Г¤ГЄГ«ГѕГ·ГҐГ­ГЁГҐ ГЄ Г±ГҐГ°ГўГҐГ°Гі ГЇГ® ГҐГЈГ® IP (ГЏГ®ГЄГ  Г·ГІГ® ГЎГҐГ§ Г±Г¬ГҐГ­Г» ГЏГ®Г°ГІГ )                #
+; #     - HexToDec(str)                             - ГЏГҐГ°ГҐГўГ®Г¤ ГЁГ§ Hex Гў Dec (Г‘ГІГ°Г®ГЄГ®ГўГ»Гµ Г§Г­Г Г·ГҐГ­ГЁГ©)                                 #
+; #     - getVehicleLockStaterus()                  - ГЏГҐГ°ГҐГўГ®Г¤ ГЁГ§ Г«Г®ГЈГЁГ·ГҐГ±ГЄГ®ГЈГ® Г§Г­Г Г·ГҐГ­ГЁГї Гў "ГЋГІГІГЄГ°Г»ГІГ® / Г‡Г ГЄГ°Г»ГІГ®"                    #
+; #     - getVehicleEngineStaterus()                - ГЏГҐГ°ГҐГўГ®Г¤ ГЁГ§ Г«Г®ГЈГЁГ·ГҐГ±ГЄГ®ГЈГ® Г§Г­Г Г·ГҐГ­ГЁГї Гў "Г‡Г ГўГҐГ¤ВёГ­ / Г‚Г»ГЄГ«ГѕГ·ГҐГ­"                    #
+; #     - getVehicleLightStaterus()                 - ГЏГҐГ°ГҐГўГ®Г¤ ГЁГ§ Г«Г®ГЈГЁГ·ГҐГ±ГЄГ®ГЈГ® Г§Г­Г Г·ГҐГ­ГЁГї Гў "Г‚Г»ГЄГ«ГѕГ·ГҐГ­ / Г‚ГЄГ«ГѕГ·ВёГ­"                    #
+; #     - getVehicleHealthrus()                     - ГЉГ®Г°ГҐГЄГ¶ГЁГї Г«Г®ГЈГЁГ·ГҐГ±ГЄГ®ГЈГ® ГўГ»Г°Г®Г¦ГҐГ­ГЁГї (Г‡Г Г¬ГҐГ­ГїГҐГ¬ -1 Г­Г  ГЇГіГ±ГІГіГѕ ГЇГҐГ°ГҐГ¬ГҐГ­Г­ГіГѕ)         #
 ; ###############################################################################################################################              
 ; #  by McFree_                                                                                                                 #
-; #    - getPlayerPosById(dwId)                     - Вычисляет позицию персонажа                                               #
-; #    - HexToDecOne(Hex)                           - Перевод из Hex в Dec                                                      #
+; #    - getPlayerPosById(dwId)                     - Г‚Г»Г·ГЁГ±Г«ГїГҐГІ ГЇГ®Г§ГЁГ¶ГЁГѕ ГЇГҐГ°Г±Г®Г­Г Г¦Г                                                #
+; #    - HexToDecOne(Hex)                           - ГЏГҐГ°ГҐГўГ®Г¤ ГЁГ§ Hex Гў Dec                                                      #
 ; ###############################################################################################################################
 ; # by Godarck                                                                                                                  #
-; #     - GetInterior()                             - True or False. Находится ли персонаж в интерьере или нет.                 #
-; #     - getVehicleSirenState()                    - True or False. Включена ли сирена в полицейской машине или нет.           #
-; #     - CoordsFromRedmarker()                     - Считывает координаты метки с карты.                                       #
+; #     - GetInterior()                             - True or False. ГЌГ ГµГ®Г¤ГЁГІГ±Гї Г«ГЁ ГЇГҐГ°Г±Г®Г­Г Г¦ Гў ГЁГ­ГІГҐГ°ГјГҐГ°ГҐ ГЁГ«ГЁ Г­ГҐГІ.                 #
+; #     - getVehicleSirenState()                    - True or False. Г‚ГЄГ«ГѕГ·ГҐГ­Г  Г«ГЁ Г±ГЁГ°ГҐГ­Г  Гў ГЇГ®Г«ГЁГ¶ГҐГ©Г±ГЄГ®Г© Г¬Г ГёГЁГ­ГҐ ГЁГ«ГЁ Г­ГҐГІ.           #
+; #     - CoordsFromRedmarker()                     - Г‘Г·ГЁГІГ»ГўГ ГҐГІ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІГ» Г¬ГҐГІГЄГЁ Г± ГЄГ Г°ГІГ».                                       #
+; #     - NearPlayerInCar(dist)                     - РћРїСЂРµРґРµР»СЏРµС‚ РёРіСЂРѕРє РІ Р°РІС‚РѕРјРѕР±РёР»Рµ СЂСЏРґРѕРј                                       #
 ; ###############################################################################################################################
 ; # By Unknown                                                                                                                  #
-; #     - disableCheckpoint()                       - Отключает маркер на карте. Disabled REd Marker on map                     #
-; #     - setCheckpoint(xpos,ypos,zpos,Radius)      - Устанавливает маркер на карте. Рекомендуемое значение радиуса             #
+; #     - disableCheckpoint()                       - ГЋГІГЄГ«ГѕГ·Г ГҐГІ Г¬Г Г°ГЄГҐГ° Г­Г  ГЄГ Г°ГІГҐ. Disabled REd Marker on map                     #
+; #     - setCheckpoint(xpos,ypos,zpos,Radius)      - Г“Г±ГІГ Г­Г ГўГ«ГЁГўГ ГҐГІ Г¬Г Г°ГЄГҐГ° Г­Г  ГЄГ Г°ГІГҐ. ГђГҐГЄГ®Г¬ГҐГ­Г¤ГіГҐГ¬Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ Г°Г Г¤ГЁГіГ±Г              #
 ; ###############################################################################################################################
 
 
@@ -482,12 +483,12 @@ addChatMessageEx(Color, wText) {
     
    return true
 }
-; Перевод значений функций из "истина / лож" в текстовые значения
+; ГЏГҐГ°ГҐГўГ®Г¤ Г§Г­Г Г·ГҐГ­ГЁГ© ГґГіГ­ГЄГ¶ГЁГ© ГЁГ§ "ГЁГ±ГІГЁГ­Г  / Г«Г®Г¦" Гў ГІГҐГЄГ±ГІГ®ГўГ»ГҐ Г§Г­Г Г·ГҐГ­ГЁГї
 getVehicleLockStaterus() {
     if(getVehicleLockState() = 0)
-    return "{00A700}Открыт{A9C4E4}"
+    return "{00A700}ГЋГІГЄГ°Г»ГІ{A9C4E4}"
     if(getVehicleLockState() = 1)
-    return "{D60505}Закрыт{A9C4E4}"
+    return "{D60505}Г‡Г ГЄГ°Г»ГІ{A9C4E4}"
 }
 getVehicleHealthrus() {
     if(getVehicleHealth() = -1)
@@ -497,15 +498,15 @@ getVehicleHealthrus() {
 }
 getVehicleEngineStaterus() {
     if(getVehicleEngineState() = 0)
-    return "{D60505}Выключен{A9C4E4}"
+    return "{D60505}Г‚Г»ГЄГ«ГѕГ·ГҐГ­{A9C4E4}"
     if(getVehicleEngineState() = 1)
-    return "{75DB1B}Заведён{A9C4E4}"
+    return "{75DB1B}Г‡Г ГўГҐГ¤ВёГ­{A9C4E4}"
 }
 getVehicleLightStaterus() {
     if(getVehicleLightState() = 0)
-    return "{D60505}Выключены{A9C4E4}"
+    return "{D60505}Г‚Г»ГЄГ«ГѕГ·ГҐГ­Г»{A9C4E4}"
     if(getVehicleLightState() = 1)
-    return "{75DB1B}Включены{A9C4E4}"
+    return "{75DB1B}Г‚ГЄГ«ГѕГ·ГҐГ­Г»{A9C4E4}"
 }
 newchat() {
     {
@@ -611,7 +612,7 @@ getIP() {
     return ipAddr
 }
 
-; Смена Ip Сервера
+; Г‘Г¬ГҐГ­Г  Ip Г‘ГҐГ°ГўГҐГ°Г 
 setIP(IP) {
     if(!checkHandles())
         return False
@@ -1755,6 +1756,32 @@ getTargetPlayerSkinIdById(dwId) {
 
 ; ##### Extra-Player-Fahrzeug-Funktionenn #####
 
+NearPlayerInCar(dist)
+{
+  TempDist := 100
+  if not dist dist := TempDist
+p := getStreamedInPlayersInfo()  ; streamedinplayers array
+if(!p)
+  return
+lpos := getCoordinates() ; your position
+if(!lpos)
+  return
+For i, o in p
+{
+  t:=getDist(lpos,o.POS)
+  if(t<=dist)
+  {
+        
+          if (t < TempDist) and ( t > 5 ) and getTargetVehicleModelNameById(i)      
+          {
+            TempId := i
+            TempDist := t
+          }
+        }
+      }        
+return TempId
+}
+
 getVehiclePointerByPed(dwPED) {
     dwPED += 0
     dwPED := Floor(dwPED)
@@ -2172,7 +2199,7 @@ getTargetVehicleSpeedByPed(dwPED) {
     fSpeedZ := readMem(hGTA, dwAddr + ADDR_VEHICLE_Z, 4, "float")
     
     fVehicleSpeed :=  sqrt((fSpeedX * fSpeedX) + (fSpeedY * fSpeedY) + (fSpeedZ * fSpeedZ))
-    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВ¶ht bzw. verringert
+    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВѓГ‚В¶ht bzw. verringert
  
 	return fVehicleSpeed
 }
@@ -2188,7 +2215,7 @@ getTargetVehicleSpeedById(dwId) {
     fSpeedZ := readMem(hGTA, dwAddr + ADDR_VEHICLE_Z, 4, "float")
     
     fVehicleSpeed :=  sqrt((fSpeedX * fSpeedX) + (fSpeedY * fSpeedY) + (fSpeedZ * fSpeedZ))
-    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВ¶ht bzw. verringert
+    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВѓГ‚В¶ht bzw. verringert
  
 	return fVehicleSpeed
 }
@@ -3102,7 +3129,7 @@ getVehicleSpeed() {
     fSpeedZ := readMem(hGTA, dwAddr + ADDR_VEHICLE_Z, 4, "float")
     
     fVehicleSpeed :=  sqrt((fSpeedX * fSpeedX) + (fSpeedY * fSpeedY) + (fSpeedZ * fSpeedZ))
-    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВ¶ht bzw. verringert
+    fVehicleSpeed := (fVehicleSpeed * 100) * 1.43           ;Der Wert "1.43" ist meistens auf jedem Server anders. Die Geschwindigkeit wird somit erhГѓВѓГ‚В¶ht bzw. verringert
  
 	return fVehicleSpeed
 }
